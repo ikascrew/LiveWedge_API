@@ -7,11 +7,12 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"libvsw"
 	"log"
 	"math/rand"
 	"os"
 	"time"
+
+	"github.com/cerevo/LiveWedge_API/libvsw"
 )
 
 const PARAM_VERSION = 5

@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"libvsw"
 	"log"
 	"os"
 	"time"
+
+	"github.com/cerevo/LiveWedge_API/libvsw"
 )
 
 func sample_trans(vsw *libvsw.Vsw, src1, src2 int) {

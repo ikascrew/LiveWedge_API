@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"libvsw"
 	//"log"
 	"os"
 	"time"
+
+	"github.com/cerevo/LiveWedge_API/libvsw"
 )
 
 func sample_pinp(vsw *libvsw.Vsw, mainSrc, subSrc int) {

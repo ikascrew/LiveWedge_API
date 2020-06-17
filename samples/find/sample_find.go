@@ -1,8 +1,9 @@
 package main
 
 import (
-	"libvsw"
 	"fmt"
+
+	"github.com/cerevo/LiveWedge_API/libvsw"
 )
 
 func main() {

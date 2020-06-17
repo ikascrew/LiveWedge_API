@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"libvsw"
+	"github.com/cerevo/LiveWedge_API/libvsw"
 )
 
 const (
