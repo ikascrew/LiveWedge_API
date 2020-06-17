@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"libvsw"
 	"log"
 	"os"
 	"time"
+
+	"libvsw"
 )
 
 const (

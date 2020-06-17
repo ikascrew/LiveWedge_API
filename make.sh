@@ -1,17 +1,12 @@
 #!/bin/sh
 set -x
 
-if [ -z $GOPATH ]; then
-    export GOPATH=$PWD
-else
-    export GOPATH=$PWD:$GOPATH
-fi
-(cd src/libvsw; go generate; go install)
-(cd src/autotrans; go build)
-(cd src/sample_trans; go build)
-(cd src/sample_wipe; go build)
-(cd src/sample_pinp; go build)
-(cd src/sample_chromakey; go build)
-(cd src/sample_rec; go build)
-(cd src/sample_status; go build)
-(cd src/sample_find; go build)
+(cd libvsw; go generate; go install)
+(cd samples/autotrans; go build)
+(cd samples/trans; go build)
+(cd samples/wipe; go build)
+(cd samples/pinp; go build)
+(cd samples/chromakey; go build)
+(cd samples/rec; go build)
+(cd samples/status; go build)
+(cd samples/find; go build)
