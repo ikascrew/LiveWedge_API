@@ -25,33 +25,37 @@ Getting status from LiveWedge is still under construction. func (vsw Vsw) Reques
 Common library for manupulating LiveWedge by network.
 
 ### autotrans
-Sample program to make video transition automatically. See src/autotrans/00Readme.txt
+Sample program to make video transition automatically. See samples/autotrans/00Readme.txt
 
-### sample_trans
+### samples/trans
 Very simple program just to repeat cut and mix.
 
-### sample_wipe
+### samples/wipe
 Very simple program just to repeat wipe all pattern. 
 
-### sample_pinp
+### samples/pinp
 Very simple program of Picture in Picture. 
 
-### sample_chromakey
+### samples/chromakey
 Very simple program of chroma key. 
 
-### sample_rec
+### samples/rec
 Very simple program just to send recording start/stop command with web UI.
 
-### sample_status
+### samples/status
 A sample program for getting status via UDP.
 
-### sample_find
+### samples/find
 A sample program for finding a LiveWedge within the same network.
 
 ## How to build
 
 0. Install go language.
-Tested in linux/amd64. Go version 1.4 and 1.5. I hope Mac/Windows works, too.
+
+Tested in linux/amd64,windows/amd64. Go version 1.14. I hope Mac works, too.
+
+    go get github.com/cerevo/LiveWedge_API
+    go generate github.com/cerevo/LiveWedge_API/libvsw
 
 1. Execute ./make.sh at the top directory.
 
@@ -79,4 +83,4 @@ Then, invoke method of vsw. For example, cut every 3 seconds.
 		time.Sleep(3 * time.Second)
 	}
 
-See src/sample_trans/sample_trans.go for complete example.
+See samples/trans/sample_trans.go for complete example.

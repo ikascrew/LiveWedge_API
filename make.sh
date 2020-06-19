@@ -1,7 +1,8 @@
 #!/bin/sh
 set -x
 
-(cd libvsw; go generate; go install)
+export GO111MODULES=on
+
 (cd samples/autotrans; go build)
 (cd samples/trans; go build)
 (cd samples/wipe; go build)

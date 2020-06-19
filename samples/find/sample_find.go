@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/cerevo/LiveWedge_API/libvsw"
+	"github.com/cerevo/LiveWedge_API/libvsw/v2"
 )
 
 func main() {

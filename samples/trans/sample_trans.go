@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/cerevo/LiveWedge_API/libvsw"
+	"github.com/cerevo/LiveWedge_API/libvsw/v2"
 )
 
 func sample_trans(vsw *libvsw.Vsw, src1, src2 int) {
