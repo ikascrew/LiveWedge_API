@@ -12,7 +12,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/cerevo/LiveWedge_API/libvsw/v2"
+	"github.com/cerevo/LiveWedge_API/v2/libvsw"
 )
 
 const PARAM_VERSION = 5

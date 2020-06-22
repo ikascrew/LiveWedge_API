@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/cerevo/LiveWedge_API/libvsw/v2"
+	"github.com/cerevo/LiveWedge_API/v2/libvsw"
 )
 
 const f0 string = `<html><body>
