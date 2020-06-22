@@ -54,10 +54,20 @@ A sample program for finding a LiveWedge within the same network.
 
 Tested in linux/amd64,windows/amd64. Go version 1.14. I hope Mac works, too.
 
-    go get github.com/cerevo/LiveWedge_API
-    go generate github.com/cerevo/LiveWedge_API/libvsw
+    go get github.com/cerevo/LiveWedge_API/v2
 
-1. Execute ./make.sh at the top directory.
+Or 
+
+Write the code that loads the package and execute it.
+
+    import (
+        "github.com/cerevo/LiveWedge_API/v2/libvsw"
+    )
+
+    go run .
+    go build .
+    go test .
+
 
 ## API document
 
